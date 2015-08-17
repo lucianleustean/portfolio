@@ -1,2 +1,11 @@
 header.site-header
   .site-header-inner
+    a href="/"
+      h1= data.config.site_title
+      h2= data.config.job_title
+
+    nav.site-nav role="navigation" aria-label="Site links"
+      ul
+        - data.config.navigation.each do |item|
+          - page = find_page item
+          li[class=(/#{page.slug}/ =~ current_page.path ? 'active' : nil)]= link_to page.title, "/#{page.slug}"
