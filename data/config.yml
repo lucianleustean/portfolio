@@ -1,0 +1,17 @@
+site_title: Lucian Leustean
+job_title: e-Concepter and Web developer
+
+pages:
+  portfolio: portfolio
+  about-me: 'about-me'
+  contact: contact
+
+# Main site navigation
+#
+# This array defines the order of the items shown on the page and
+# should match the keys used in the pages Hash in data/config.yaml
+
+navigation:
+  - portfolio
+  - about-me
+  - contact
