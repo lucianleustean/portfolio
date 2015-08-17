@@ -5,3 +5,7 @@ source 'https://rubygems.org'
 # Middleman Gems
 gem "middleman", "~>3.3.12"
 gem "middleman-livereload", "~> 3.1.0"
+
+gem 'redcarpet'
+gem 'slim'
+gem 'html2slim' # Use `bundle exec erb2slim|html2slim -h` for more info

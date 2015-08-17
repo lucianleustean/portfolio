@@ -70,3 +70,8 @@ configure :build do
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
 end
+
+# Force HTML5 to avoid self-closing tags
+Slim::Engine.options[:format] = :html
+# Set slim-lang output style
+Slim::Engine.options[:pretty] = true
