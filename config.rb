@@ -71,6 +71,9 @@ configure :build do
   # set :http_prefix, "/Content/images/"
 end
 
+# Move partials out of the way of regular pages
+set :partials_dir, 'partials/'
+
 # Force HTML5 to avoid self-closing tags
 Slim::Engine.options[:format] = :html
 # Set slim-lang output style
