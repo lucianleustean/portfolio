@@ -21,7 +21,7 @@ $red:           #ce0000;
 $header-height: 10em;
 
 $page-max-width: 80em;
-$page-padding: 8%;
+$page-side-padding: 8%;
 $hero-height: 25em;
 
 $prose-width: 50em;
@@ -50,7 +50,7 @@ ul {
 }
 .site-header-inner {
   max-width: $page-max-width;
-  padding: 0 $page-padding;
+  padding: 0 $page-side-padding;
   margin: 0 auto;
   position: relative;
 }
@@ -81,6 +81,37 @@ ul {
   img {
     border-radius: 50%;
     height: 10em;
+  }
+}
+
+
+//
+// Reusable page elements
+//
+.column-content {
+  max-width: $page-max-width;
+  padding-left: $page-side-padding;
+  padding-right: $page-side-padding;
+  margin-left: auto;
+  margin-right: auto;
+}
+.split-column {
+  width: 50%;
+  float: left;
+}
+.split-column:nth-child(even) {
+  padding-right: 2em;
+}
+.split-column:nth-child(odd) {
+  padding-left: 2em;
+}
+.prose {
+  max-width: $prose-width;
+  margin-left: auto;
+  margin-right: auto;
+
+  ul {
+    list-style-type: disc;
   }
 }
 
