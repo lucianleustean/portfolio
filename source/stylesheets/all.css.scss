@@ -18,7 +18,7 @@ $yellow:        #ccce00;
 $red:           #ce0000;
 
 // Variables - layout
-$header-height: 5em;
+$header-height: 10em;
 
 $page-max-width: 80em;
 $page-padding: 8%;
@@ -45,17 +45,19 @@ ul {
 //
 .site-header {
   background: $blue;
-  height: $header-height;
   color: white;
+  height: $header-height;
 }
 .site-header-inner {
   max-width: $page-max-width;
   padding: 0 $page-padding;
   margin: 0 auto;
-
+  position: relative;
 }
 .site-details {
-  float: left;
+  float: right;
+  text-align: right;
+  margin-top: 2.5em;
 
   h1 { font-size: 2.2em; font-weight: normal; }
   h2 { font-size: 1em; font-weight: normal; }
@@ -69,32 +71,45 @@ ul {
     }
   }
 }
-.site-nav {
-  float: right;
+.logo {
+  height: 15em;
+  width: 15em;
+  padding: 3em 2em;
+  position: absolute;
+  z-index: 999;
 
-  li {
-    display: inline-block;
-    padding-right: 1em;
-    line-height: $header-height;
-
-    &.active a {
-      border-bottom: 2px solid;
-      padding-bottom: 0.1em;
-    }
-    a {
-      outline: 0;
-      text-decoration: none;
-      color: white;
-      border-bottom: 2px solid transparent;
-      padding-bottom: 0.25em;
-
-      &:focus,
-      &:hover {
-        border-bottom: 2px solid;
-        padding-bottom: 0.1em;
-      }
-    }
+  img {
+    border-radius: 50%;
+    height: 10em;
   }
 }
+
+// .site-nav {
+//   float: right;
+
+//   li {
+//     display: inline-block;
+//     padding-right: 1em;
+//     line-height: $header-height;
+
+//     &.active a {
+//       border-bottom: 2px solid;
+//       padding-bottom: 0.1em;
+//     }
+//     a {
+//       outline: 0;
+//       text-decoration: none;
+//       color: white;
+//       border-bottom: 2px solid transparent;
+//       padding-bottom: 0.25em;
+
+//       &:focus,
+//       &:hover {
+//         border-bottom: 2px solid;
+//         padding-bottom: 0.1em;
+//       }
+//     }
+//   }
+// }
 
 @import 'projects';

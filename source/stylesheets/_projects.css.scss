@@ -60,16 +60,16 @@
       writing-mode: lr-tb;
     }
 
-    &:nth-child(2n+2):after {
-      -webkit-transform: rotate(359deg);
-      -moz-transform: rotate(359deg);
-      -o-transform: rotate(359deg);
-    }
-    &:nth-child(2n+3):after {
-      background-color: white;
+    &:nth-child(2n):after {
       -webkit-transform: rotate(1deg);
       -moz-transform: rotate(1deg);
       -o-transform: rotate(1deg);
+    }
+    &:nth-child(2n+1):after {
+      background-color: white;
+      -webkit-transform: rotate(359deg);
+      -moz-transform: rotate(359deg);
+      -o-transform: rotate(359deg);
     }
   }
 }
