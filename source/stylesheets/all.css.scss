@@ -7,6 +7,16 @@ $dark-blue: #2c3e50; // e.g. footer
 
 $gray: #d9d9d9;
 
+
+// Some nice flat colors
+$blue:          #6692a6;
+$green:         #61a777;
+$orange:        #ce6700;
+$pink:          #ce00cb;
+$purple:        #7761a7;
+$yellow:        #ccce00;
+$red:           #ce0000;
+
 // Variables - layout
 $header-height: 5em;
 
@@ -14,7 +24,7 @@ $page-max-width: 80em;
 $page-padding: 8%;
 $hero-height: 25em;
 
-$prose-width: 40em;
+$prose-width: 50em;
 
 * {
   margin: 0;
@@ -86,3 +96,5 @@ ul {
     }
   }
 }
+
+@import 'projects';
