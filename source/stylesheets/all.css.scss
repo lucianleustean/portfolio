@@ -115,6 +115,25 @@ ul {
   }
 }
 
+
+//
+// Helper classes
+//
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.no-top {
+  margin-top: 0 !important; // .no-top should trump all other margin declarations
+}
+.center-text {
+  text-align: center;
+}
+
 // .site-nav {
 //   float: right;
 
