@@ -135,6 +135,50 @@ ul {
   text-align: center;
 }
 
+
+//
+// Site footer
+//
+.site-footer {
+  background-color: black;
+
+  .site-footer-inner {
+    color: white;
+    display: table;
+    padding: 4em;
+
+    a {
+      color: inherit;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.about-me {
+  display: table-cell;
+  vertical-align: top;
+  white-space: normal;
+  width: auto;
+}
+
+.external-links {
+  display: table-cell;
+  font-size: 2.5em;
+  padding-left: 2em;
+  width: 1%;
+
+  a:hover {
+    .fa-twitter-square  { color: #55acee; }
+    .fa-linkedin-square { color: #007ab9; }
+    .fa-github-square   { color: #1f76b6; }
+  }
+}
+
+
 // .site-nav {
 //   float: right;
 
