@@ -1,2 +1,13 @@
 footer.site-footer
-  .site-footer-inner
+  .column-content.clearfix
+    .site-footer-inner
+      .about-me
+        p= data.config.about_me
+
+      .external-links
+        a.external-linkedin> href="https://nl.linkedin.com/in/lucianleustean"
+          i.fa.fa-twitter-square
+        a.external-twitter> href="https://twitter.com/lucian_leustean"
+          i.fa.fa-linkedin-square
+        a.external-github> href="https://github.com/lucianleustean"
+          i.fa.fa-github-square
