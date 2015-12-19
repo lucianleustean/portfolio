@@ -73,6 +73,14 @@ configure :build do
   # set :http_prefix, "/Content/images/"
 end
 
+# Deploy app to Github
+activate :deploy do |deploy|
+  deploy.method   = :git
+  deploy.remote   = "git@github.com:lucianleustean/lucianleustean.github.io.git"
+  deploy.branch   = "master"
+  deploy.strategy = :force_push
+end
+
 # Move partials out of the way of regular pages
 set :partials_dir, 'partials/'
 
